@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(34, 34, 34);
+  user-select: none;
+  font-family: "Jost", Arial, san-serif;
+  height: 100vh;
+  color: white;
+  position: relative;
+  }
+
+.shopName {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 600;
+  color: white;
+  }
+
+.back {
+  position: absolute;
+  left: 5%;
+  top: 2.5%;
+  width: 50px;
+  height: 50px;
+  font-family: "Jost";
+  font-size: 40px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  line-height: 0;
+}
+
+.skinsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skinsDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 800px;
+  width: 400px;
+  align-items: center;
+}
+
+.skinsDiv button:hover {
+  scale: 0.95;
+}
+
+.skinsDiv img {
+  width: 500px;
+  height: 500px;
+  filter: 
+  drop-shadow(2px 2px 0px white)
+  drop-shadow(-2px -2px 0px white)
+  drop-shadow(-2px 2px 0px white)
+  drop-shadow(2px -2px 0px white);
+  -webkit-user-drag: none;
+}
+
+.skinsDiv p {
+  font-size: 60px;
+  margin: 0px;
+}
+
+.skinsDiv button {
+  width: 350px;
+  height: 60px;
+  font-family: "Jost";
+  font-size: 40px;
+  border-radius: 5px;
+  border: none;
+}
