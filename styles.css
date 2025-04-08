@@ -1,0 +1,277 @@
+.name {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 600;
+  color: white;
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
+.count {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
+
+.mainInfo {
+  top: 30%;
+}
+
+.mainButtons {
+  font-family: "Jost";
+  margin-top: 20px;
+}
+
+.mainButtons * {
+  margin-top: 7px;
+}
+
+.middleSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.midmiddiv {
+  display: flex;
+  align-items: center;
+}
+
+.arrows {
+  background-color: #222222;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.arrows:hover {
+  scale: 0.95;
+}
+
+.arrows:active {
+  scale: 0.9;
+}
+
+.leftsec {
+  width: 800px;
+}
+
+.button {
+  height: 400px;
+  width: 400px;
+  border: none;
+  background: none;
+}
+
+.button img {
+  height: 400px;
+  cursor: pointer;
+  filter: 
+    drop-shadow(2px 2px 0px white)
+    drop-shadow(-2px -2px 0px white)
+    drop-shadow(-2px 2px 0px white)
+    drop-shadow(2px -2px 0px white);
+    -webkit-user-drag: none;
+}
+
+.button img:active {
+  scale: 0.95;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+  user-select: none;
+  font-family: "Jost", Arial, san-serif;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.shopGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 430px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+}
+
+.shopTitle {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 500;
+  color: white;
+  margin: 0px;
+  margin-top: 120px;
+}
+
+.rightSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopGrid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.shopGrid::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+.shopGrid::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.shopInfo {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.shopButton img {
+  height: 135px;
+  filter: 
+  drop-shadow(2px 2px 0px white)
+  drop-shadow(-2px -2px 0px white)
+  drop-shadow(-2px 2px 0px white)
+  drop-shadow(2px -2px 0px white);
+  -webkit-user-drag: none;
+}
+
+.shopButton {
+  display: flex;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 400px;
+  height: 139px;
+  gap: 10px;
+  font-size: 13px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shopButton .shopButtName {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.shopButton p {
+  margin-top: 0px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.shopButton:hover {
+  scale: 0.95;
+}
+
+.jpcCount {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
+
+.jpsCount {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
+
+.skinsButton {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 110px;
+  cursor: pointer;
+  font-family: "Jost";
+}
+
+.skinsButton:hover {
+  scale: 0.95;
+}
+.skinsContainer {
+  display: grid;
+  place-items: center;
+}
+
+.comSoon {
+  font-size: 12px;
+}
+
+.resetButton {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Jost";
+}
+
+.resetButton:hover {
+  scale: 0.95;
+}
+
+.resetContainer {
+  display: grid;
+  place-items: center;
+}
+
+.updateLink {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.progressBar {
+  background-color: rgb(54, 54, 54);
+  width: 800px;
+  height: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.progressPoint {
+  background-color: rgb(24, 24, 24);
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:1000px) {
+  .shopGrid {
+    width: 250px;
+  }
+}
+
